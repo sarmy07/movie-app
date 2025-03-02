@@ -1,12 +1,27 @@
-# React + Vite
+# Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple movie app that allows users to search for movies and view their details, including title, release date, poster.
 
-Currently, two official plugins are available:
+## Features:
+- Search for movies by title
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started:
+1. Clone the repository: `git clone https://github.com/sarmy07/movie-app.git`
+2. Navigate to the project directory: `cd movie-app`
+3. Install dependencies: `npm install`
 
-## Expanding the ESLint configuration
+## Running the App:
+1. Start the app: `npm run dev`
+2. Open your web browser and navigate to `http://localhost:5173`
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## API Documentation:
+The app uses the Open Movie Database (OMDb) API to fetch movie data.
+
+### API Endpoints:
+- `GET /movies`: Search for movies by title
+
+### Example Use Cases:
+- **Searching for Movies**: `GET /movies?q=The+Shawshank+Redemption`
+
+## Acknowledgments:
+- Open Movie Database (OMDb) API for providing movie data.
